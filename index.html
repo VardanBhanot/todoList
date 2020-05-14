@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css" />
+    <title>ToDo List</title>
+  </head>
+  <body id ="main">
+    <div id="wrapper">
+      <div id="header">
+      <h1>ToDo List</h1>
+      </div>
+      
+
+      <div class="list">
+        <ul class="grid"></ul>
+      </div>
+    </div>
+    <div class="modal">
+      <form id="add-form">
+        <input type="text" class="inputVal" placeholder="Enter your Task" />
+        <select id="priority" name="priority">
+            <option value="Urgent">Urgent</option>
+            <option value="Important">Important</option>
+            <option value = "Flexible">Flexible</option>
+            <option value="Just a Thought">Just a Thought</option>
+        </select>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+body,h1,h2,p{
+    margin:0;
+    padding: 0;
+    font-family: "Rubik Regular";
+}
+
+
+
+.list ul{
+    list-style-type: none;
+}
+
+
+@font-face{
+    font-family: 'Rubik Regular';
+    src: url("fonts/Rubik-Regular.ttf");
+}
+
+
+/* basic styling */
+
+
+.delete{
+    outline: none;
+    border: 1px solid coral;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.delete:hover{
+    background: coral;
+    color: cornsilk;
+}
+.delete:active{
+    border: 2px solid chocolate;
+}
+.delete:visited{
+    box-shadow: none;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+/*mobile styles*/
+
+
+#header{
+    position: relative;
+    background: url("./sun.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+#header h1{
+    margin: 5px 0 0 5px;
+    position: absolute;
+    bottom: 5px;
+}
+
+select{
+    display: none;
+}
+
+.list{
+    overflow-y: scroll;
+    max-height: 66vh;
+}
+
+.list ul{
+    margin: 10px 0 0 0;
+    padding: 0 10px;
+}
+
+.list li {
+    grid-column: 1/9;
+    font-size: 1.1em;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin:  0;
+}
+
+.list li:hover{
+    border-color: rgba(220,220,200, 0.5);
+}
+.list li input[type="checkbox"]{
+    grid-column: 1/2;
+    margin: 0;
+    border-radius: 20px;
+    align-self: center;
+    justify-self: end;
+}
+.list li span{
+    grid-column: 2/8;
+    word-wrap: break-word;
+    align-self: center;
+    padding-left: 8px;
+}
+.list li .delete{
+    grid-column: 8/9;  
+}
+
+
+#add-form input[type=text]{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:100%;
+    padding: 20px;
+    box-sizing: border-box; 
+    font-size: 1.5em;
+}
+#add-form .button{
+    display: none;
+}
+
+
+@media screen and (min-width:960px) {
+    #wrapper {
+        margin: 10px auto;
+        width: 40%;
+    }
+
+    #wrapper h1{
+        text-align: center;
+    }
+
+    #add-form{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #add-form input[type=text]{
+        position: relative;
+        width: initial;
+        font-size: 1.5em;
+    }
+
+    #add-form .button{
+        display: inline-block;
+    }
+
+    .list{
+        overflow-y: unset;
+        max-height: 77vh;
+    }
+    .modal{
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable */
+    }
+    .list li {
+        grid-column: 1/9;
+        font-size: 1.1em;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+        margin: 2px 0 0 0;
+        background: white;
+        border-radius: 2px;
+    }
+    .list li .delete{
+        grid-column: 8/9;
+        margin-right: 20px;  
+    }
+}
+
+
+
+
+
