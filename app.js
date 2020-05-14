@@ -80,7 +80,7 @@ function changeBackgroundImg(){
   //console.log(time);
   let header = document.querySelector("#header");
   let body = document.querySelector("#main");
-  console.log(body);
+  //console.log(body);
   if(time >= 19 ){
     header.style.background = 'url("./try.jpg")';
     body.style.background = 'rgb(15,124,145)'
@@ -91,5 +91,12 @@ function changeBackgroundImg(){
 
   }
 
+}
+
+
+if("serviceWorker" in navigator){
+  navigator.serviceWorker.register('./service-worker.js')
+  .then((reg) => console.log("service worker registered",reg))
+  .catch((err)=> console.log('service worker not regeistered',err))
 }
 
