@@ -1,5 +1,8 @@
 const FILES_TO_CACHE = [
     './index.html',
+    './fonts',
+    './app.js',
+    './styles.css'
   ];
 
 
@@ -21,17 +24,12 @@ evt.waitUntil(
     })
 );
 
-// CODELAB: Add fetch event handler here.
-if (evt.request.mode !== 'navigate') {
-    // Not a page navigation, bail.
-    return;
-  }
   evt.respondWith(
       fetch(evt.request)
           .catch(() => {
             return caches.open(CACHE_NAME)
                 .then((cache) => {
-                  return cache.match('offline.html');
+                  return cache.match('./index.html');
                 });
           })
   );
