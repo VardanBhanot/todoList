@@ -16,3 +16,8 @@ const FILES_TO_CACHE = [
    console.log('service worker has been activated');
  }) ;
 
+
+ self.addEventListener('fetch',evt =>{
+   console.log("fetch");
+ })
+
