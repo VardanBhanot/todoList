@@ -10,9 +10,9 @@ Its a fun project to practice JS and CSS and apply PWA for mobile as well as Des
 
 
 ##Upcomming Features
-- [] Integrated Daily Weather Status :sun_behind_small_cloud: and Notification :bell: 
-- [] ToDo reminders using PWA Notification API as the data is been stored in Local Storage.
-- [] Priority Based tasks(partially done).
+- [ ] Integrated Daily Weather Status :sun_behind_small_cloud: and Notification :bell: 
+- [ ] ToDo reminders using PWA Notification API as the data is been stored in Local Storage.
+- [ ] Priority Based tasks(partially done).
 
 
 ##Ideas :bulb:
