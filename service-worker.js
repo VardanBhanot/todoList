@@ -6,7 +6,7 @@ const assets = [
   "/styles.css",
   "/assets/img/sun.jpg",
   "/assets/img/try.jpg",
-  "/manifest.json"
+  "https://fonts.googleapis.com/css2?family=Raleway&display=swap"
 ];
 
 self.addEventListener("install", (evt) => {
