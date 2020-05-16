@@ -81,10 +81,10 @@ function changeBackgroundImg() {
   let body = document.querySelector("#main");
   //console.log(body);
   if (time >= 19) {
-    header.style.background = 'url("./try.jpg")';
+    header.style.background = 'url("./assets/img/try.jpg")';
     body.style.background = "rgb(15,124,145)";
   } else if (time < 19) {
-    header.style.background = 'url("./sun.jpg")';
+    header.style.background = 'url("./assets/img/sun.jpg")';
     body.style.background = "#FFF";
   }
 }

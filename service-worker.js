@@ -1,23 +1,34 @@
-const FILES_TO_CACHE = [
-    './index.html',
-    './fonts',
-    './app.js',
-    './styles.css'
-  ];
+const staticCacheName = "site-static";
+const assets = [
+  "/",
+  "/index.html",
+  "/app.js",
+  "/assets/fonts/Rubik-Regular.ttf",
+  "/styles.css",
+  "/assets/img/sun.jpg",
+  "/assets/img/try.jpg",
 
+  "/manifest.json"
+];
 
-  self.addEventListener('install',evt =>{
-    console.log('service workor has been installed');
-  });
+self.addEventListener("install", (evt) => {
+  evt.waitUntil(
+    caches.open(staticCacheName).then((cache) => {
+      console.log("cashing in the shell");
+      cache.addAll(assets);
+    })
+  );
+});
 
- 
+self.addEventListener("activate", (evt) => {
+  //console.log('service worker has been activated');
+});
 
- self.addEventListener('activate',evt =>{
-   console.log('service worker has been activated');
- }) ;
-
-
- self.addEventListener('fetch',evt =>{
-   console.log("fetch");
- })
-
+self.addEventListener("fetch", (evt) => {
+  //console.log("fetch",evt);
+  evt.respondWith(
+    caches.match(evt.request).then(cacheRes =>{
+      return cacheRes || fetch(evt.request);
+    })
+  );
+});

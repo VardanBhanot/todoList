@@ -13,7 +13,7 @@ body,h1,h2,p{
 
 @font-face{
     font-family: 'Rubik Regular';
-    src: url("fonts/Rubik-Regular.ttf");
+    src: url("/assets/fonts/Rubik-Regular.ttf");
 }
 
 
@@ -48,9 +48,10 @@ body,h1,h2,p{
 
 #header{
     position: relative;
-    background: url("./sun.jpg");
-    background-size: cover;
+    /*background: url("./sun.jpg");*/
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: right;
     color: white;
     margin: 0;
     padding: 10px;
