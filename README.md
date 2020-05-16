@@ -2,7 +2,7 @@
 
 Its a fun project to practice JS and CSS and apply PWA for mobile as well as Desktop(Windows).
 
-##Features
+## Features
 
 - [x] Supports PWA so you can use it offline as an Native App.
 - [x] Time based theme. 
@@ -15,7 +15,7 @@ Its a fun project to practice JS and CSS and apply PWA for mobile as well as Des
 - [ ] Priority Based tasks(partially done).
 
 
-##Ideas :bulb:
+## Ideas :bulb:
 Adding Swipe gestures for performing Delete actions
 
 
