@@ -1,11 +1,11 @@
-const staticCacheName = "site-static";
+const staticCacheName = 'site-static';
 const assets = [
-  "/",
-  "/index.html",
-  "/app.js",
-  "/styles.css",
-  "/assets/img/sun.jpg",
-  "/assets/img/try.jpg",
+  "./",
+  "./index.html",
+  "./app.js",
+  "./styles.css",
+  "./assets/img/sun.jpg",
+  "./assets/img/try.jpg",
   "https://fonts.googleapis.com/css2?family=Raleway&display=swap"
 ];
 
