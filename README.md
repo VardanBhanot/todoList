@@ -19,7 +19,7 @@ Its a fun project to practice JS and CSS and apply PWA for mobile as well as Des
 Adding Swipe gestures for performing Delete actions.
 
 
-##Status
+## Status
 As i took mobile first Approach the Mobile version :iphone: is good to use. And the desktop versions UI is being changed.
 
 
