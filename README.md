@@ -1,7 +1,7 @@
-# ToDo List
+# ToDo List 
 
 Its a fun project to practice JS and CSS and apply PWA for mobile as well as Desktop(Windows).
-
+check this project from this [Link](https://vardanbhanot.github.io/todoList/)
 ## Features
 
 - [x] Supports PWA so you can use it offline as an Native App.
