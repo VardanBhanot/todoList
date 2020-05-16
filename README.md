@@ -4,7 +4,7 @@ Its a fun project to practice JS and CSS and apply PWA for mobile as well as Des
 check this project from this [Link](https://vardanbhanot.github.io/todoList/)
 ## Features
 
-- [x] Supports PWA so you can use it offline as an Native App.
+- [x] Supports PWA so you can use it offline as a Native App.
 - [x] Time based theme. 
 
 
